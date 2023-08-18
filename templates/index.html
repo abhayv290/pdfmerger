@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PDFPlay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  .container h1{
+color: navy;
+    
+    text-align: center;
+}
+.container p{
+    text-align: center;
+    font-size: larger;
+}
+
+#form{
+    margin: 20px auto;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    border: 2px dotted red;
+    border-radius: 26rem;
+}
+
+#inp{
+    position: relative;
+    left: 116px;
+    top: -20px;
+}
+
+@media screen and (max-width:450px) {
+ 
+  .inp{
+    position:relative;
+    left:100px
+  }
+  img{
+    position: relative;
+    left:100px;
+  }
+
+
+
+  
+}
+
+</style>
+<body>
+    <nav  class="navbar navbar-expand-lg bg-body-tertiary text-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="pdft" href="index.html">PDFTools</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               More Tools
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html">PdfMerger</a></li>
+                  <li><a class="dropdown-item" href="#">Converter:Img-Pdf</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Converter:Pdf-Img</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="h">
+            <h1 >PDFx:Free Online Pdf Merger</h1>
+           <p>Merge your Pdf as smooth as merging sugar in tea</p>
+          </div>
+          <div id="form">
+          <form method="post" action="/merge" enctype="multipart/form-data">
+            <img  src="https://cdn4.iconfinder.com/data/icons/creative-1/63/pdf-doc-512.png " height="100px" alt="pdficon">
+              <input class="inp" type="file" name="pdfs" class="form-control-file" id="exampleformcontrolfile1"  multiple accept=" .pdf" style="margin: 20px 0 ;"><br>
+              <input type="submit" id="inp" value="submit" class ="btn btn-primary"> 
+            </form>
+          </div>
+        </div>
+        </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script
+</html>

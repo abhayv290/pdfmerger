@@ -1,0 +1,42 @@
+.container h1{
+    color: navy;
+        
+        text-align: center;
+    }
+    .container p{
+        text-align: center;
+        font-size: larger;
+    }
+    
+    #form{
+        margin: 20px auto;
+        background-color: rosybrown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        border: 2px dotted red;
+        border-radius: 26rem;
+    }
+    
+    #inp{
+        position: relative;
+        left: 116px;
+        top: -20px;
+    }
+    
+    @media screen and (max-width:450px) {
+     
+      .inp{
+        position:relative;
+        left:100px
+      }
+      img{
+        position: relative;
+        left:100px;
+      }
+    
+    
+    
+      
+    }
